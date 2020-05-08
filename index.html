@@ -1,5 +1,5 @@
  <!DOCTYPE html>
-<!-- 
+<!--
 
         Running on cargo.site
 
@@ -11,31 +11,31 @@
 			<script>
 				var __cargo_context__ = 'live';
 				var __cargo_js_ver__ = '20-05-07.2';
-				
+
 				window.dataLayer = window.dataLayer || [];
 				function gtag(){dataLayer.push(arguments);}
 				gtag('js', new Date());
 
 				gtag('config', 'UA-1837333-7');
 				gtag('config', '');
-				
-				
+
+
 			</script>
 					<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		
+
 			<meta name="robots" content="index,follow">
 		<title>tableforone</title>
 		<meta name="description" content="Cargo">
-		
+
 		<link rel="preconnect" href="https://static.cargo.site" crossorigin>
 		<link rel="preconnect" href="https://freight.cargo.site" crossorigin>
 				<link rel="preconnect" href="https://type.cargo.site" crossorigin>
 
 		<!--<link rel="preload" href="https://static.cargo.site/assets/social/IconFont-Regular-0.9-a.woff?v=3" as="font" type="font/woff" crossorigin>-->
 
-		
+
 
 		<link href="https://static.cargo.site/favicon/favicon.ico" rel="shortcut icon">
 		<link href="https://tableforone.cargo.site/rss" rel="alternate" type="application/rss+xml" title="tableforone feed">
@@ -75,10 +75,10 @@
 
 	</head>
 	<body data-bodyview="" style="visibility: hidden;">
-		
+
 			<div id="toolset" class="toolset">
 		<div id="toolset_admin">
-			<a 
+			<a
 					href="#" rel="load_admin"
 							>
 				<svg id="Layer_1" x="0px" y="0px" viewBox="0 6 30 30" style="enable-background:new 0 6 30 30;">
@@ -93,7 +93,7 @@
 			window.scrollMonitor=function(){var t,i,o,e,s,n=function(){return window.pageYOffset||document.documentElement&&document.documentElement.scrollTop||document.body.scrollTop},h={},c=[],l="visibilityChange",r="enterViewport",a="fullyEnterViewport",p="exitViewport",w="partiallyExitViewport",u="locationChange",m="stateChange",f=[l,r,a,p,w,u,m],d={top:0,bottom:0},b=function(){return window.innerHeight||document.documentElement.clientHeight},v=function(){return Math.max(document.body.scrollHeight,document.documentElement.scrollHeight,document.body.offsetHeight,document.documentElement.offsetHeight,document.documentElement.clientHeight)};function g(){if(h.viewportTop=n(),h.viewportBottom=h.viewportTop+h.viewportHeight,h.documentHeight=v(),h.documentHeight!==t){for(o=c.length;o--;)c[o].recalculateLocation();t=h.documentHeight}}function V(){h.viewportHeight=b(),g(),k()}function I(){clearTimeout(e),e=setTimeout(V,100)}function k(){for(s=c.length;s--;)c[s].update();for(s=c.length;s--;)c[s].triggerCallbacks()}function y(t,o){var e,s,n,c,b,v,g=this;this.watchItem=t,this.offsets=o?o===+o?{top:o,bottom:o}:{top:o.top||d.top,bottom:o.bottom||d.bottom}:d,this.callbacks={};for(var V=0,I=f.length;V<I;V++)g.callbacks[f[V]]=[];function k(t){if(0!==t.length)for(b=t.length;b--;)(v=t[b]).callback.call(g,i),v.isOne&&t.splice(b,1)}this.locked=!1,this.triggerCallbacks=function(){switch(this.isInViewport&&!e&&k(this.callbacks[r]),this.isFullyInViewport&&!s&&k(this.callbacks[a]),this.isAboveViewport!==n&&this.isBelowViewport!==c&&(k(this.callbacks[l]),s||this.isFullyInViewport||(k(this.callbacks[a]),k(this.callbacks[w])),e||this.isInViewport||(k(this.callbacks[r]),k(this.callbacks[p]))),!this.isFullyInViewport&&s&&k(this.callbacks[w]),!this.isInViewport&&e&&k(this.callbacks[p]),this.isInViewport!==e&&k(this.callbacks[l]),!0){case e!==this.isInViewport:case s!==this.isFullyInViewport:case n!==this.isAboveViewport:case c!==this.isBelowViewport:k(this.callbacks[m])}e=this.isInViewport,s=this.isFullyInViewport,n=this.isAboveViewport,c=this.isBelowViewport},this.recalculateLocation=function(){if(!this.locked){var t=this.top,i=this.bottom;if(this.watchItem.nodeName){var o=this.watchItem.style.display;"none"===o&&(this.watchItem.style.display="");var e=this.watchItem.getBoundingClientRect();this.top=e.top+h.viewportTop,this.bottom=e.bottom+h.viewportTop,"none"===o&&(this.watchItem.style.display=o)}else this.watchItem===+this.watchItem?this.watchItem>0?this.top=this.bottom=this.watchItem:this.top=this.bottom=h.documentHeight-this.watchItem:(this.top=this.watchItem.top,this.bottom=this.watchItem.bottom);this.top-=this.offsets.top,this.bottom+=this.offsets.bottom,this.height=this.bottom-this.top,void 0===t&&void 0===i||this.top===t&&this.bottom===i||k(this.callbacks[u])}},this.recalculateLocation(),this.update(),e=this.isInViewport,s=this.isFullyInViewport,n=this.isAboveViewport,c=this.isBelowViewport}h.viewportTop=null,h.viewportBottom=null,h.documentHeight=null,h.viewportHeight=b(),y.prototype={on:function(t,o,e){switch(!0){case t===l&&!this.isInViewport&&this.isAboveViewport:case t===r&&this.isInViewport:case t===a&&this.isFullyInViewport:case t===p&&this.isAboveViewport&&!this.isInViewport:case t===w&&this.isAboveViewport:if(o.call(this,i),e)return}if(!this.callbacks[t])throw new Error("Tried to add a scroll monitor listener of type "+t+". Your options are: "+f.join(", "));this.callbacks[t].push({callback:o,isOne:e||!1})},off:function(t,i){if(!this.callbacks[t])throw new Error("Tried to remove a scroll monitor listener of type "+t+". Your options are: "+f.join(", "));for(var o,e=0;o=this.callbacks[t][e];e++)if(o.callback===i){this.callbacks[t].splice(e,1);break}},one:function(t,i){this.on(t,i,!0)},recalculateSize:function(){this.height=this.watchItem.offsetHeight+this.offsets.top+this.offsets.bottom,this.bottom=this.top+this.height},update:function(){this.isAboveViewport=this.top<h.viewportTop,this.isBelowViewport=this.bottom>h.viewportBottom,this.isInViewport=this.top<=h.viewportBottom&&this.bottom>=h.viewportTop,this.isFullyInViewport=this.top>=h.viewportTop&&this.bottom<=h.viewportBottom||this.isAboveViewport&&this.isBelowViewport},destroy:function(){var t=c.indexOf(this);c.splice(t,1);for(var i=0,o=f.length;i<o;i++)this.callbacks[f[i]].length=0},lock:function(){this.locked=!0},unlock:function(){this.locked=!1}};for(var H=function(t){return function(i,o){this.on.call(this,t,i,o)}},E=0,T=f.length;E<T;E++){var B=f[E];y.prototype[B]=H(B)}try{g()}catch(t){try{window.$(g)}catch(t){throw new Error("If you must put scrollMonitor in the <head>, you must use jQuery.")}}function A(t){i=t,g(),k()}return"#throttle-scroll-monitor"===window.location.hash&&(A=_.throttle(A,66)),window.addEventListener?(window.addEventListener("scroll",A),window.addEventListener("resize",I)):(window.attachEvent("onscroll",A),window.attachEvent("onresize",I)),h.beget=h.create=function(t,i){"string"==typeof t?t=document.querySelector(t):t&&t.length>0&&(t=t[0]);var o=new y(t,i);return c.push(o),o.update(),o},h.update=function(){i=null,g(),k()},h.recalculateLocations=function(){h.documentHeight=0,h.update()},h}();
 		</script>
 
-		<customhtml></customhtml>		
+		<customhtml></customhtml>
 		<div class="loading" data-loading="page">
 <div class="loading_animation pulsing <%= extra_class %> ">
 	<div>
@@ -102,11 +102,11 @@
 		</svg>
 	</div>
 </div>		</div>
-		
-		<div 
-	id="site_menu_wrapper" class="disabled mobile_only" 
-	data-sitemenu-position="top-right" 
-	data-type="page" 
+
+		<div
+	id="site_menu_wrapper" class="disabled mobile_only"
+	data-sitemenu-position="top-right"
+	data-type="page"
 	data-set="SiteMenu"
 	data-view="SiteMenu"
 >
@@ -115,7 +115,7 @@
 
 			&#xfe0e;
 	</a>
-	
+
 	<div id="site_menu_panel_container" data-type="page"><!-- empty container for site menu --></div>
 
 </div>
@@ -128,7 +128,7 @@
 	<div class="page container container_width clearfix" data-container="content" data-id="13098752">
 		<bodycopy class="bodycopy content content_padding">
 
-			
+
 			<div class="page_content clearfix" data-elementresizer data-resize-parent>
 				<projectcontent><div grid-row="" grid-pad="3" grid-gutter="6"><div grid-col="8" grid-pad="3"></div><div grid-col="4" grid-pad="3"><div style="text-align: right"><a href="https://www.instagram.com/cargoworld/" target="_blank" class="icon-link">︎</a>
 </div></div></div>
@@ -139,10 +139,10 @@
 <div style="text-align: left"><sup>1 </sup>Read instructions<br>
 <sup>2</sup> Follow instructions<br><sup>3 </sup>Re-live the experiences of dining-out<br></div>
 
-				
-			
-		
-	
+
+
+
+
 <br><hr>
 <div style="text-align: left">Created during a crisis<br>
 by Gilad Dor &amp; Nick Gregg<br></div>
@@ -155,7 +155,7 @@ by Gilad Dor &amp; Nick Gregg<br></div>
 </div></projectcontent>
 			</div>
 
-			
+
 		</bodycopy>
 	</div>
 	<div class="page_background"></div>
@@ -228,18 +228,18 @@ by Gilad Dor &amp; Nick Gregg<br></div>
 }
 	</style>
 	</div>						</div>
-			
+
 			<div class="content_container">
 <div data-view="Content" data-set="Scaffolding">
-	
-	
 
-	
+
+
+
 	<div data-container="page" class="page_container" local-style="13098753" data-id="13098753">
-		
+
 		<div class="page container container_width" data-container="content" data-id="13098753">
 			<bodycopy class="bodycopy content content_padding">
-				
+
 				<div class="page_content clearfix" data-elementresizer data-resize-parent>
 					<projectcontent><h1>Table For One</h1><hr>
 <br>
@@ -248,13 +248,13 @@ by Gilad Dor &amp; Nick Gregg<br></div>
 	<div grid-col="5" grid-pad="2" class=""><img width="4500" height="4500" width_o="4500" height_o="4500" data-src="https://freight.cargo.site/t/original/i/f01cfb6b5608c625ae6bfa3c6c552dca197eea5870d58b943be4d05fc051fbdc/Starbucks_Waiting.jpg" data-mid="70234278" border="0" /></div>
 	<div grid-col="4" grid-pad="2" class="">
 
-					
-				
-			
-		
-	
 
-    
+
+
+
+
+
+
 <sup>1 &nbsp;</sup>Make a cup of coffee<br>
 <br><sup>2 &nbsp;</sup>Walk to the other side of your kitchen
 <br><br>
@@ -292,15 +292,15 @@ Hard Roll <sup><small>&amp;</small></sup></span><br></blockquote>
 <sup>6 &nbsp;</sup>Take one sip of the coffee<br><br>
 <sup>7 &nbsp;</sup>While eating, let your back get sprinkled<br>
 
-	
-		
-		
-	
-	
-		
-			
-				
-					
+
+
+
+
+
+
+
+
+
 						</div>
 	<div grid-col="3" grid-pad="2">
 <small><sup>*</sup>two days old</small> <br>
@@ -342,29 +342,29 @@ Hard Roll <sup><small>&amp;</small></sup></span><br></blockquote>
 </div>
 	<div grid-col="3" grid-pad="2" class="">
 
-	
-		
-		
-	
-	
-		
-			
-				
+
+
+
+
+
+
+
+
 					<br>
 <small><sup>°</sup> from your latest Amazon order<sup>¢</sup></small>
 
 					<br>
 <small><sup>¢</sup> when you crossed the picket line</small>
 
-				
-				
+
+
 					<br>
 <small><sup>§</sup> science fair display</small>
 
-				
-			
-		
-	
+
+
+
+
 </div></div><br>
 <hr><br><div grid-row="" grid-pad="2" grid-gutter="4" grid-responsive=""><div grid-col="5" grid-pad="2"><img width="4500" height="4500" width_o="4500" height_o="4500" data-src="https://freight.cargo.site/t/original/i/94a059fc3c236e42fc285104f4d66a981a7376528eb33a3f71ebb05cf9dcaffd/Regular_Feeling.jpg" data-mid="70235705" border="0" /><br></div>
 	<div grid-col="4" grid-pad="2" class=""><sup>1 &nbsp;</sup><span style="font-size: 1.5rem; background-color: initial;">Go to your bathroom</span><br><br>
@@ -376,13 +376,13 @@ Hard Roll <sup><small>&amp;</small></sup></span><br></blockquote>
 	<div grid-col="3" grid-pad="2"></div></div><br><hr><div grid-row="" grid-pad="2" grid-gutter="4" grid-responsive=""><div grid-col="5" grid-pad="2" class=""><img width="4500" height="4500" width_o="4500" height_o="4500" data-src="https://freight.cargo.site/t/original/i/e0b307b91fbf852bfc3d69cfd4bb5dc9e213250cab9608ca94074fa61aaaeceb/StoodUp_Date.jpg" data-mid="70236575" border="0" /></div>
 	<div grid-col="4" grid-pad="2" class="">
 
-					
-				
-			
-		
-	
 
-    
+
+
+
+
+
+
 <sup>1 &nbsp;</sup>Make portions for two<br>
 <br><sup>2 &nbsp;</sup>Bring your table outside<br><br>
 <sup>3 </sup> Position half of the table and one chair on the sidewalk<br><br>
@@ -397,13 +397,13 @@ Hard Roll <sup><small>&amp;</small></sup></span><br></blockquote>
 <hr><div grid-row="" grid-pad="2" grid-gutter="4" grid-responsive=""><div grid-col="5" grid-pad="2" class=""><img width="4500" height="4500" width_o="4500" height_o="4500" data-src="https://freight.cargo.site/t/original/i/e0b307b91fbf852bfc3d69cfd4bb5dc9e213250cab9608ca94074fa61aaaeceb/StoodUp_Date.jpg" data-mid="70236575" border="0" /></div>
 	<div grid-col="4" grid-pad="2" class="">
 
-					
-				
-			
-		
-	
 
-    
+
+
+
+
+
+
 <sup>1 &nbsp;</sup>Make a bag of popcorn<br>
 <br><sup>2 &nbsp;</sup>Walk through your neighborhood<br><br>
 <sup>3 </sup> Scan the ground floor windows<br><br>
@@ -414,12 +414,12 @@ Hard Roll <sup><small>&amp;</small></sup></span><br></blockquote>
 	<div grid-col="3" grid-pad="2"></div></div><br><hr><br><hr><br><br><hr><br><hr><hr><br><br></projectcontent>
 				</div>
 
-				
+
 			</bodycopy>
 		</div>
 
 		<div class="page_background"></div>
-		
+
 		<style class="local-css" data-target="13098753">
 			[local-style="13098753"] .container_width {
 }
@@ -479,7 +479,7 @@ Hard Roll <sup><small>&amp;</small></sup></span><br></blockquote>
 		</style>
 			</div>
 
-				
+
 </div>
 
 <div data-autopaginate></div><div data-view="Thumbnail" data-set="GlobalThumbnails" class="thumbnails">
@@ -500,14 +500,14 @@ Hard Roll <sup><small>&amp;</small></sup></span><br></blockquote>
 
 		<style id="">/*
  * This CSS file has been generated and is served by Cargo Collective Inc
- * and is authorized to be used on Cargo Collective Inc only. 
+ * and is authorized to be used on Cargo Collective Inc only.
  *
- * This CSS resource incorporates links to font software which is 
- * the valuable copyrighted property of WebType LLC, The Font Bureau 
- * and/or their suppliers. You may not 
- * attempt to copy, install, redistribute, convert, modify or reverse 
- * engineer this font software. Please contact WebType with any 
- * questions: http://www.webtype.com 
+ * This CSS resource incorporates links to font software which is
+ * the valuable copyrighted property of WebType LLC, The Font Bureau
+ * and/or their suppliers. You may not
+ * attempt to copy, install, redistribute, convert, modify or reverse
+ * engineer this font software. Please contact WebType with any
+ * questions: http://www.webtype.com
  */
 
 @font-face {
